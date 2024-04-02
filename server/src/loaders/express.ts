@@ -4,11 +4,20 @@ import cors from 'cors'
 import config from '../config'
 import path from "path";
 import routes from "../api/index"
+import swagger from "./swagger";
 
 export default ({ app }: { app: Application }): void => {
-    /*
-    Health Check Endpoint
-    */
+    /**
+     * @openapi
+     * /api/health:
+     *   get:
+     *     tags:
+     *       - Health Check
+     *     description: Responds if the app is up and running
+     *     responses:
+     *       200:
+     *         description: App is up and running
+     */
     app.get('/api/health', (req: Request, res: Response) => {
         res.status(200).end()
     })
@@ -25,6 +34,7 @@ export default ({ app }: { app: Application }): void => {
             credentials: true,
         })
     )
+    swagger(app)
     /*
    Load Frontend as Static Pages
    */

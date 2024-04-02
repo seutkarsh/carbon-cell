@@ -10,6 +10,19 @@ import validateToken from "../middlewares/authentication";
 
 export default (router:Router): void=>{
     const userService = Container.get(UserService)
+    /**
+     * @openapi
+     * /api/register:
+     * post:
+     *   tags:
+     *     - User
+     *   summary: Register a user
+     *   requestBody:
+     *     required:true
+     *     contents:
+     *       application/json:
+     *         schema:
+     */
     router.post(
         '/register',
         userRegistrationValidator,

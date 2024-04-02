@@ -3,6 +3,7 @@ import {Connection} from "mongoose";
 import mongooseLoader from "./mongoose"
 import dependencyInjector from './dependencyInjector'
 import expressLoader from './express'
+import swaggerLoader from './swagger'
 export default async ({
     expressApp,
 }: {
