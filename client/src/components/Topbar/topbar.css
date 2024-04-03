@@ -35,6 +35,9 @@
 }
 .options {
     display: flex;
-    gap: 8px;
+    gap: 15px;
     margin-right: 15px;
+}
+.options *{
+    cursor: pointer;
 }

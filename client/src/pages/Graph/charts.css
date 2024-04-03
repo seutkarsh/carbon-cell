@@ -1,0 +1,14 @@
+.chart-container {
+    width: auto;
+    height: 75vh;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.chart {
+    padding-top: 20px;
+}
+
+.chart-heading {
+    color: #1d1d1d;
+    ;
+}
