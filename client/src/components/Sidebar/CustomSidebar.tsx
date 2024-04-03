@@ -25,11 +25,11 @@ const CustomSidebar = (): React.ReactElement => {
                         {!isCollapsed && (
                             <div className="brand">
                                 <h3>BrandName</h3>
-                                <button
+                                <div
                                     onClick={() => setIsCollapsed(!isCollapsed)}
                                 >
                                     <MenuOutlinedIcon />
-                                </button>
+                                </div>
                             </div>
                         )}
                     </MenuItem>
