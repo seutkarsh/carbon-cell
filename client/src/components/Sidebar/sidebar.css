@@ -1,0 +1,58 @@
+/*.custom-sidebar .pro-sidebar-inner {*/
+/*    background: #3f51b5 !important;*/
+/*}*/
+
+.custom-sidebar .pro-icon-wrapper {
+    background-color: transparent !important;
+}
+
+.custom-sidebar .pro-inner-item {
+    padding: 5px 35px 5px 20px !important;
+}
+
+.custom-sidebar .pro-inner-item:hover {
+    color: #868dfb !important;
+}
+
+.custom-sidebar .pro-menu-item.active {
+    color: #6870fa !important;
+}
+
+.brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+}
+
+.profile-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.user-section {
+    margin: 25px;
+}
+
+.user-info {
+    text-align: center;
+}
+.user-info h2 {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.user-info h5 {
+    color: white;
+}
+
+.item-section {
+    padding-left: 10%;
+}
